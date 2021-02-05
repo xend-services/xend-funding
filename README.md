@@ -31,6 +31,18 @@ You can use jsdeliver to allow github to serve they sdk in your project
                     paymentOption: 2,
                     amount: 2000,
                     token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImRlZmF1bHRAeGVuZC5uZyIsInN1YiI6IjIzNDgxNjAxODg5MTIiLCJqdGkiOiI2N2JkNWRmNy0zMTgxLTRiY2YtYTYwZS05NmZmM2FhZjRjNzUiLCJpYXQiOiIxNjEyMzU3MjE1NDU2LjM2IiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvbmFtZWlkZW50aWZpZXIiOiI1ZDQ0ZmU0My0zZWM5LTRmYzAtOWY3Zi0yODVhZTZiMWQyOTAiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiMjM0ODE2MDE4ODkxMiIsIkxvZ2dlZEluQXMiOiJVc2VyIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsIlRva2VuSWRlbnRpdHkiOiI4NWUwOWFiMy0wODVlLTRjZGEtYjZiNC0yNDZjZjQyNjdlNzYiLCJleHAiOjE2MTI3ODkyMTUsImlzcyI6IlhlbmQgQW5kIFVnbyIsImF1ZCI6IlVuYmFua2VkIn0.oitnpsXqgzVKCWVmZYBWR6qHVj6PYHmvLWQ_aCC0HV4",
+                    onXendComplete: function(response){
+                    // Implement what should happen when the function has been completed
+                    console.log(response)
+                    },
+                    onclose: function(){
+                        //Implement what should happen when the modal is closed here
+                        alert('window closed')
+                    } 
+                    onFail: function(response){
+                        //Implement what should happen when something fails
+                        console.log(response)
+                    }  
                 }
             )
         }      
