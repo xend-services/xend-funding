@@ -38,7 +38,7 @@ You can use jsdeliver to allow github to serve they sdk in your project
                     onclose: function(){
                         //Implement what should happen when the modal is closed here
                         alert('window closed')
-                    } 
+                    },
                     onFail: function(response){
                         //Implement what should happen when something fails
                         console.log(response)
